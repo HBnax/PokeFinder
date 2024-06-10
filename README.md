@@ -1,7 +1,3 @@
-Vercel Link: https://pokefinder-nextjs.vercel.app/
-
-Description: Simple Pokédex page displaying the original 151 Pokémon. Search bar filters through the names by letters. Borders on each Pokémon page correspond with the Pokémon's typing. The page title can also be used as a back button after visiting a Pokémon's page.
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
