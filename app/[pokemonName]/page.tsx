@@ -1,6 +1,7 @@
 import { getPokemon } from "@/lib/pokemonAPI";
 import Image from 'next/image';
 import { Progress } from "@/components/ui/progress";
+import { Label } from "@/components/ui/label";
 import { PokemonImage } from "@/components/pokemon-image";
 import { Water_Brush } from "next/font/google";
 import { PowerSquareIcon } from "lucide-react";
@@ -51,7 +52,9 @@ export default async function PokemonPage({ params } : {params: { pokemonName: s
                 <div className="flex-col">
                     <h3 className="p-3 w-2/4">
                         Type: {pokemonObject.types.map((typeObject: any) => {
-                            return typeObject.type.name.charAt(0).toUpperCase() + typeObject.type.name.slice(1) + " ";
+                            return (
+                                typeObject.type.name.charAt(0).toUpperCase() + typeObject.type.name.slice(1) + " "
+                            );
                         })}
                     </h3>
                     <h3 className="p-3 w-2/4">Weight: {pokemonObject.weight} lbs</h3>
